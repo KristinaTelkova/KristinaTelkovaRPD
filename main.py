@@ -8,7 +8,7 @@ from forms.user import RegisterForm
 from forms.add_news import NewsForm
 
 
-import requests
+
 from flask import Flask, url_for, request, render_template, abort
 from flask import flash, redirect, make_response, session
 from flask_login import LoginManager, login_user, logout_user, login_required
@@ -16,7 +16,7 @@ from flask_login import current_user
 
 
 from forms.loginform import LoginForm
-from mailform import MailForm
+
 
 
 current_directory = os.path.dirname(__file__)
