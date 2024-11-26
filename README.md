@@ -1,5 +1,5 @@
 # *Проект " Сайт студии дизайна Red Piano"*
-![Логотип](https://github.com/KristinaTelkova/KristinaTelkovaRPD/blob/main/images/logo.jpg)
+![Логотип](https://github.com/KristinaTelkova/KristinaTelkovaRPD/blob/master/images/logo.jpg)
 ## Содержание:
 
 1.Главная страница:
