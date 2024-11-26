@@ -16,7 +16,7 @@ from flask_login import current_user
 
 
 from forms.loginform import LoginForm
-
+from mailform import MailForm
 
 
 current_directory = os.path.dirname(__file__)
@@ -31,6 +31,10 @@ app.config['SECRET_KEY'] = 'too_short_key'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['PERMANENT_SESSION_LIFETIME'] = datetime.timedelta(days=365)
 
+config = configparser.ConfigParser()
+
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 @login_manager.user_loader
 def user_loader(user_id):
@@ -50,6 +54,10 @@ def index():
     param['title'] = 'Главная'
     return render_template('index.html', **param)
 
+@login_manager.user_loader
+def user_loader(user_id):
+    db_sess = db_session.create_session()
+    return db_sess.query(User).get(user_id)
 
 @app.route('/session_test')
 def session_test():
@@ -95,7 +103,6 @@ def register():
         db_sess.commit()
         return redirect('/login')
     return render_template('register.html', title='Регистрация', form=form)
-
 
 
 @app.route('/login', methods=['GET', 'POST'])
