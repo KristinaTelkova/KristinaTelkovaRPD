@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href=”https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css” />
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <title>Contacts</title>
+</head>
+
+<body>
+
+    <div class="container ">
+        <!-- Панель навигации -->
+        <nav class="navbar navbar-expand-lg fixed-top ">
+            <a class="navbar-brand" href="http://127.0.0.1:5000/"><img src="static/images/logo.jpg" width="60px" height="60px"
+                    alt="Логотип"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link link-dark" aria-current="page" href="http://127.0.0.1:5000/">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark " href="http://127.0.0.1:5000/about">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="http://127.0.0.1:5000/contacts">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link link-dark" href="http://127.0.0.1:5000/blog">Отзывы</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <br><br><br>
+        <!-- Хлебные крошки -->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="http://127.0.0.1:5000/" class="link-dark">Главная</a></li>
+                <li class="breadcrumb-item "><a href="http://127.0.0.1:5000/about" class="link-dark">О нас</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+            </ol>
+        </nav>
+        <!-- Заголовок -->
+        <div class="header ">
+            <h2 style="font-size: 40pt;  color: azure; text-align: center ">Контакты</h2>
+        </div>
+        <br>
+        <hr style="width: 50%; margin: 0 25% 0 25%;">
+        <br>
+        <!-- Контент -->
+        <div class="row">
+
+            <div class="col col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                    class="bi bi-telegram" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                </svg> <a href="http.t.me" class="link-dark">@Zakazdesign </a>
+                <br><br><br>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                    class="bi bi-telephone-inbound-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0z" />
+                </svg> <a href="tel:+7 920 455 60 05">+79204556005 </a>
+
+                <br><br><br>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                    class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                </svg> <a href="email:kristinamazepina@mail.ru">kristinamazepina@mail.ru </a>
+                <br><br><br>
+                <h6 style="  color:rgb(2, 2, 2); text-align: center "> 190013, г.Санкт‑Петербург, Можайская улица, 2
+                </h6>
+
+            </div>
+            <br><br><br>
+
+
+            <div class="col col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+                <div style="position:relative;overflow:hidden;"><a
+                        href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+                        style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a
+                        href="https://yandex.ru/maps/2/saint-petersburg/house/mozhayskaya_ulitsa_2/Z0kYdQVlTUwPQFtjfXVweX9jYQ==/?ll=30.325498%2C59.918305&utm_medium=mapframe&utm_source=maps&z=16.48"
+                        style="color:#eee;font-size:12px;position:absolute;top:14px;">Можайская улица, 2 —
+                        Яндекс Карты</a><iframe
+                        src="https://yandex.ru/map-widget/v1/?ll=30.325498%2C59.918305&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzQyMTI2MRJN0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JzQvtC20LDQudGB0LrQsNGPINGD0LvQuNGG0LAsIDIiCg2emvJBFVisb0I%2C&z=16.48"
+                        width="560" height="500" frameborder="1" allowfullscreen="true"
+                        style="position:relative;"></iframe>
+                </div>
+            </div>
+        </div>
+
+<br><br>
+    </div>
+    <!-- Подвал -->
+    <footer class="bg-body-tertiary text-center text-lg-start fixed-bottom">
+        <div class="text-center" style="background-color: rgba(187, 185, 185, 0.05);">
+            © 2024 Студия дизайна Red piano
+        </div>
+
+    </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
